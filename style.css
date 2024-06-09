@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.gamecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #212845;
+    width: 100vw;
+    height: calc(100vh - 65px);
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #181b2e;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.tile {
+    background-color: #212845;
+    border: 2px solid #2167ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.boxtext {
+    font-weight: bold;
+    color: white;
+}
+
+.gameinfo {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+#reset, #toggle-mode {
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.image img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.line {
+    background-color: red;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    transition: width 0.5s ease-in-out;
+}
